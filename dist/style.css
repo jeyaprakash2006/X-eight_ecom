@@ -21,3 +21,8 @@ dialog{margin:auto;background:#111410;color:var(--ink);border:1px solid #3b4238;
 @media(max-width:760px){.tech-measure>span{font-size:11px}.technical-label{display:none}.technical-footer{font-size:10px}.chapter-nav button span{font-size:11px}}
 .hk9-highlights{margin:25px 0 0}.hk9-highlights>div{display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.hk9-highlights dt{color:#889580}.hk9-highlights dd{margin:0}.model-note{font-size:12px;line-height:1.7;color:#84917a;margin:18px 0 0}.hk9-detail-visual{background:radial-gradient(ellipse,#272c2970,transparent 68%),#090c0a}.hk9-specs>div{padding:0 8%}.hk9-specs b{font-size:32px}.hero-product .watch-stage{inset:-3% 0 0;height:103%}
 @media(max-width:760px){.hk9-specs>div{padding:0 12px}.hk9-specs b{font-size:28px}.hk9-specs p{font-size:10px}.hero-meta{display:none}.hk9-highlights>div{font-size:14px}.hero-cta .text-button{white-space:nowrap}}
+
+.hk9-view-options{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:0 12px 20px}.hk9-view-options .mini-button{font-size:12px;padding:8px 11px}.hk9-detail-visual .detail-stage{min-height:380px}
+
+.hk9-view-note{text-align:center;font-size:12px;color:var(--muted);margin:-8px 10px 18px}.hk9-view-options .active{border-color:var(--accent);color:var(--accent)}
+.hk9-view-options{position:relative;z-index:4;padding-top:18px;padding-bottom:16px}.hk9-view-note{position:relative;z-index:4;pointer-events:none}.hk9-detail-visual .detail-stage{inset:58px 0 65px;min-height:0}.hk9-detail-visual{min-height:520px}@media(max-width:700px){.hk9-detail-visual{min-height:500px}.hk9-detail-visual .detail-stage{inset:62px 0 66px}}

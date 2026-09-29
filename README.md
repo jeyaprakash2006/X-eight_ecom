@@ -15,8 +15,8 @@ Open http://127.0.0.1:4173. ES modules need an HTTP server; do not open index.ht
 ## Included
 
 - Real-time Three.js watch rendering with pointer and keyboard rotation.
-- HK9 Pro photo-based geometry: rounded alloy case, curved glass, red-ring knurled crown, microphone, side button, woven loop, circular clasp, and colourful 02/38 dial.
-- Strap previews, alternate dial, illustrative exploded view, and reset controls.
+- HK9 Pro reference-based geometry: convex silver case, curved glass, red-ring knurled crown, two speaker slots, microphone, side button, continuous ivory braided yarn, circular clasp and white 10:08 dashboard.
+- Strap previews, alternate dial, front/side/sensor inspection presets, illustrative exploded assembly, and reset controls.
 - Scroll parallax, pinned engineering story, responsive navigation, and reduced-motion handling.
 - Product search, category filters, sorting, wishlist, comparison, configuration, persistent device-local bag, quantity controls, coupon and validated demo checkout.
 - No real payment, fulfilment or email. Delivery fields are discarded after confirmation; they are not transmitted or persisted.
@@ -38,7 +38,7 @@ Open http://127.0.0.1:4173. ES modules need an HTTP server; do not open index.ht
 
 Reference: https://gdsimba.en.made-in-china.com/product/rENpZKzAfjWs/China-HK9-PRO-Smartwatch-NFC-Wireless-Charging-2-02-Inch-Full-Touch-Screen-Series-8-Reloj-Intelligent-HK9-Smartwatch.html
 
-The reconstruction follows supplier photographs, not engineering drawings or a scan. The supplier does not provide credible case measurements. The GLB uses approximate physical scale derived from the listed 2.02-inch display diagonal. Internal layers, sensor underside and preview colourways are illustrative. Do not use this model for manufacturing, fitting accessories or dimensional inspection.
+The current reconstruction follows the two multi-view and exploded-assembly sheets supplied by the user. Their unmodified source images are in `dist/assets/watch-reference-views.png` and `watch-reference-assembly.png`; the display and PCB select regions with texture UVs. The braid consists of continuous crossing tubes with over-under displacement. Sensor inspection hides the loop to reveal the back. The GLB uses approximate physical scale derived from the listed 2.02-inch display diagonal. These images are not measured CAD or a scan, so an exact dimensional match is unverified. Internal layers and preview colourways are illustrative. Do not use this model for manufacturing or dimensional inspection.
 
 The existing X Ultra / X Pro / X Core catalog remains fictional. HK9 is a featured visual showcase, not a verified retail offer. Store prices are demo prices in INR.
 
