@@ -1,6 +1,6 @@
 # X EIGHT
 
-Premium, responsive smartwatch concept store. The landing page features an interactive HK9 Pro reconstruction based on the product reference supplied by the user.
+Premium, responsive smartwatch concept store with nine pages and six sample watches. The landing page features an interactive HK9 Pro reconstruction based on the product reference supplied by the user.
 
 ## Run locally
 
@@ -18,7 +18,8 @@ Open http://127.0.0.1:4173. ES modules need an HTTP server; do not open index.ht
 - HK9 Pro reference-based geometry: convex silver case, curved glass, red-ring knurled crown, two speaker slots, microphone, side button, continuous ivory braided yarn, circular clasp and white 10:08 dashboard.
 - Strap previews, alternate dial, front/side/sensor inspection presets, illustrative exploded assembly, and reset controls.
 - Scroll parallax, pinned engineering story, responsive navigation, and reduced-motion handling.
-- Product search, category filters, sorting, wishlist, comparison, configuration, persistent device-local bag, quantity controls, coupon and validated demo checkout.
+- Six concept watches: X Ultra, X Pro, X Core, X Active, X Air and X Mini. Shared catalog data drives the landing page and all store pages.
+- Dedicated Shop, Product, Saved, Compare, Bag, Checkout, About and Support pages with search, filters, 3D configuration, persistent device-local bag, quantity controls, coupon and validated demo checkout.
 - No real payment, fulfilment or email. Delivery fields are discarded after confirmation; they are not transmitted or persisted.
 - WebMCP tools for reading the catalog/bag and staging a configured watch in the bag.
 - Static image fallback when WebGL is unavailable.
@@ -26,7 +27,9 @@ Open http://127.0.0.1:4173. ES modules need an HTTP server; do not open index.ht
 ## Main files
 
 - `dist/index.html` — landing page and editorial sections.
-- `dist/style.css` — shared design and responsive styling.
+- `dist/style.css` and `dist/pages.css` — shared design and responsive page styling.
+- `dist/catalog.js` — six products and shared browser-local shopping state.
+- `dist/pages.js` — page rendering and store interactions.
 - `dist/app.js` — store, dialogs and checkout.
 - `dist/hk9-model.js` — reusable HK9 Pro model factory.
 - `dist/hk9-watch.js` — HK9 viewer, lighting, motion and input.
@@ -40,7 +43,7 @@ Reference: https://gdsimba.en.made-in-china.com/product/rENpZKzAfjWs/China-HK9-P
 
 The current reconstruction follows the two multi-view and exploded-assembly sheets supplied by the user. Their unmodified source images are in `dist/assets/watch-reference-views.png` and `watch-reference-assembly.png`; the display and PCB select regions with texture UVs. The braid consists of continuous crossing tubes with over-under displacement. Sensor inspection hides the loop to reveal the back. The GLB uses approximate physical scale derived from the listed 2.02-inch display diagonal. These images are not measured CAD or a scan, so an exact dimensional match is unverified. Internal layers and preview colourways are illustrative. Do not use this model for manufacturing or dimensional inspection.
 
-The existing X Ultra / X Pro / X Core catalog remains fictional. HK9 is a featured visual showcase, not a verified retail offer. Store prices are demo prices in INR.
+The six X EIGHT watches are fictional concept products. HK9 is a featured visual showcase, not a verified retail offer. Store prices are demo prices in INR.
 
 ## Dependencies and assets
 
@@ -48,4 +51,4 @@ Three.js 0.186.1 is vendored in `dist/vendor`; its MIT license is included. Buff
 
 ## Hosting
 
-The registered Sites identity is in `.openai/hosting.json`. Static output is `dist`. Publishing credentials must not be saved in the repository.
+The prior Sites identity is in `.openai/hosting.json`. It must be reconnected if the project is unavailable in the active Sites account. Static output is `dist`. Publishing credentials must not be saved in the repository.
