@@ -1,6 +1,6 @@
 # X EIGHT
 
-Premium, responsive smartwatch concept store with nine pages and six sample watches. The landing page features an interactive HK9 Pro reconstruction based on the product reference supplied by the user.
+Premium, responsive smartwatch concept store with ten pages, a local admin preview, and six sample watches. The landing page features an interactive HK9 Pro reconstruction based on the product reference supplied by the user.
 
 ## Run locally
 
@@ -20,6 +20,7 @@ Open http://127.0.0.1:4173. ES modules need an HTTP server; do not open index.ht
 - Scroll parallax, pinned engineering story, responsive navigation, and reduced-motion handling.
 - Six concept watches: X Ultra, X Pro, X Core, X Active, X Air and X Mini. Shared catalog data drives the landing page and all store pages.
 - Dedicated Shop, Product, Saved, Compare, Bag, Checkout, About and Support pages with search, filters, 3D configuration, persistent device-local bag, quantity controls, coupon and validated demo checkout.
+- `admin.html` is a browser-local catalog and demo-receipts dashboard: add/edit products, preview stock, hide/show, import/export JSON, reset sample data, and inspect receipts without delivery details. It does not provide secure multi-user administration or server persistence.
 - No real payment, fulfilment or email. Delivery fields are discarded after confirmation; they are not transmitted or persisted.
 - WebMCP tools for reading the catalog/bag and staging a configured watch in the bag.
 - Static image fallback when WebGL is unavailable.
@@ -28,7 +29,8 @@ Open http://127.0.0.1:4173. ES modules need an HTTP server; do not open index.ht
 
 - `dist/index.html` — landing page and editorial sections.
 - `dist/style.css` and `dist/pages.css` — shared design and responsive page styling.
-- `dist/catalog.js` — six products and shared browser-local shopping state.
+- `dist/catalog.js` — six base products, local catalog overrides, and shared browser-local shopping state.
+- `dist/admin.html`, `dist/admin.js`, `dist/admin.css` — local admin dashboard.
 - `dist/pages.js` — page rendering and store interactions.
 - `dist/app.js` — store, dialogs and checkout.
 - `dist/hk9-model.js` — reusable HK9 Pro model factory.
